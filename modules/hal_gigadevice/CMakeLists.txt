@@ -100,7 +100,7 @@ zephyr_library_sources_ifdef(CONFIG_USE_GD32_TSI      ${gd32_std_src_dir}/${CONF
 zephyr_library_sources_ifdef(CONFIG_USE_GD32_USART    ${gd32_std_src_dir}/${CONFIG_SOC_SERIES}_usart.c)
 zephyr_library_sources_ifdef(CONFIG_USE_GD32_WWDGT    ${gd32_std_src_dir}/${CONFIG_SOC_SERIES}_wwdgt.c)
 
-# F527特有的模块
+# For GD32F527
 zephyr_library_sources_ifdef(CONFIG_USE_GD32_HAU       ${gd32_std_src_dir}/${CONFIG_SOC_SERIES}_hau.c)
 zephyr_library_sources_ifdef(CONFIG_USE_GD32_PKCAU     ${gd32_std_src_dir}/${CONFIG_SOC_SERIES}_pkcau.c)
 zephyr_library_sources_ifdef(CONFIG_USE_GD32_SAI       ${gd32_std_src_dir}/${CONFIG_SOC_SERIES}_sai.c)

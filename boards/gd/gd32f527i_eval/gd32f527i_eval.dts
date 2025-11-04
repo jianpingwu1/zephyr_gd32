@@ -5,12 +5,12 @@
 
 /dts-v1/;
 
-#include <gd/gd32c2x1/gd32c231c8.dtsi>
-#include "gd32c231c_eval-pinctrl.dtsi"
+#include <gd/gd32f527/gd32f527is.dtsi>
+#include "gd32f527i_eval-pinctrl.dtsi"
 
 / {
-	model = "GigaDevice GD32C231C-EVAL";
-	compatible = "gd,gd32c231c-eval";
+	model = "GigaDevice GD32F527I-EVAL";
+	compatible = "gd,gd32f527i-eval";
 
 	chosen {
 		zephyr,flash = &flash0;
@@ -22,12 +22,8 @@
 	leds {
 		compatible = "gpio-leds";
 		led0: led0 {
-			gpios = <&gpioa 15 GPIO_ACTIVE_HIGH>;
-			label = "LED1";
-		};
-		led1: led1 {
-			gpios = <&gpiod 1 GPIO_ACTIVE_HIGH>;
-			label = "LED2";
+			gpios = <&gpiof 7 GPIO_ACTIVE_HIGH>;
+			label = "LED0";
 		};
 	};
 
@@ -36,7 +32,7 @@
 	};
 };
 
-&gpioa {
+&gpiof {
 	status = "okay";
 };
 
