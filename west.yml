@@ -179,11 +179,6 @@ manifest:
       path: modules/hal/ethos_u
       groups:
         - hal
-  #  - name: hal_gigadevice
-  #    revision: 2994b7dde8b0b0fa9b9c0ccb13474b6a486cddc3
-  #    path: modules/hal/gigadevice
-  #    groups:
-  #      - hal
     - name: hal_gigadevice
       revision: main
       url: https://github.com/jianpingwu1/zephyr_hal_gigadevice.git
